@@ -61,29 +61,15 @@
     <header class="container w-11/12 mx-auto my-auto mt-5 mb-10">
       <div class="navbar bg-base-100">
         <div
-          class="navbar-start items-center flex align-middle justify-between"
+          class="navbar-start items-center flex align-middle justify-between
         >
           <!-- Mobile dropdown trigger -->
           <a class="normal-case text-xl" href="#" aria-label="Firm Home">
             <img src="./images/logo2.png" alt="Firm logo" />
           </a>
-          <!-- <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <i class="fa-solid fa-bars text-2xl"></i>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li><a href="#">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#cases">Cases</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-            </ul>
-          </div> -->
+          
         </div>
-
+        
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-[#707070]">
             <li><a href="#">Home</a></li>
@@ -110,9 +96,39 @@
           </ul>
         </div>
 
-        <div class="navbar-end">
-          <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+        <div class="navbar-end hidden lg:block">
+          <div class="flex justify-end"><a class="btn bg-[#B68C5A] text-white">Free Consultation</a></div>
         </div>
+        <div class="navbar-end lg:hidden">
+          <div class="dropdown dropdown-bottom dropdown-end">
+         <div tabindex="0" role="button" class=" m-1"><i class="fa-solid fa-bars text-[31px]"></i></div>
+          <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+            <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#cases">Cases</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        </div>
+
+
+        <!-- <div class="dropdown navbar-end flex">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars text-3xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu mt-2 z-[1] p-2 shadow bg-base-100 rounded-box w-36"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#cases">Cases</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div> -->
+        
       </div>
     </header>
 
